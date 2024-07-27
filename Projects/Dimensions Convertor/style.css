@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height: 100vh;
+    font-weight: 100vw;
+    background: linear-gradient(90deg, rgba(35, 35, 6, 0.83) 0%, rgba(0, 188, 212, 1) 50%, rgba(238, 130, 238, 1) 100%);
+}
+
+.container{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1{
+    margin-left: 8.6rem;
+    margin-bottom: 1.5rem;
+}
+
+.weightConverter .details{
+    background: url(./assets/StockCake-Elegant\ Balance\ Scale_1722103755.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.heightConverter .details{
+    background: url(./assets/StockCake-Measuring\ Wooden\ Plank_1722103855.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.details{
+    position: relative;
+    height: 30rem;
+    width: 34rem;
+    border: 2px solid black;
+    border-radius: 1.3rem;
+    padding: 1.5rem;
+    color: white;
+}
+
+label{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+input{
+    border-radius: 1.1rem;
+    padding: 0.5rem 0.8rem;
+    font-size: 1.1rem;
+}
+
+.convertedResult{
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+span{
+    display: inline-block;
+    background-color: black;
+    width: 50%;
+    border-radius: 1.1rem;
+    text-align: center;
+}
+
+button{
+    position: absolute;
+    bottom: 1.8rem;
+    left: 36%;
+    padding: 0.8rem 1.1rem;
+    border-radius: 1.4rem;
+    cursor: pointer;
+    font-size: 1rem;
+    box-shadow: 5px 5px 10px black;
+    transition: 0.2s;
+}
+
+button:hover{
+    transform: scale(1.1);
+}

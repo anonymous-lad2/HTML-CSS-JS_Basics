@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimension Converter</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="weightConverter">
+            <h1>Weight Converter</h1>
+            <div class="details">
+
+                <div class="weightDetails">
+                    <label for="kg">Enter Weight in Kg: </label>
+                    <input type="number" id="kg" placeholder="eg: 10.55">
+                </div>
+
+                <div class="convertedResult">
+                    <div class="poundResult box">
+                        <h2>Weight in Pounds: <span data-poundResult></span></h2>
+                    </div>
+    
+                    <div class="gramResult box">
+                        <h2>Weight in Grams: <span data-gramResult></span></h2>
+                    </div>
+    
+                    <div class="ouncesResult box">
+                        <h2>Weight in Ounces: <span data-ounceResult></span></h2>
+                    </div>
+                </div>
+
+                <button class="generateWeight">Generate Result</button>
+            </div>
+        </div>
+
+
+        <div class="heightConverter">
+            <h1>Height Converter</h1>
+            <div class="details">
+                
+                <div class="heightDetails">
+                    <label for="cm">Enter Height in Cm: </label>
+                    <input type="number" id="cm" placeholder="eg: 5.68">
+                </div>
+
+                <div class="convertedResult">
+                    <div class="feetResult box">
+                        <h2>Feet: <span data-feetResult></span></h2>
+                    </div>
+    
+                    <div class="inchResult box">
+                        <h2>Inches: <span data-inchResult></span></h2>
+                    </div>
+                </div>
+                <button class="generateHeight">Generate Result</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
