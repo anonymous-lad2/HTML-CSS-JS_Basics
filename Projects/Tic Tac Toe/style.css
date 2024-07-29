@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+.container{
+    min-height: 100vh;
+    background: #07252d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    position: absolute;
+    top: 2rem;
+    border: 2px solid white;
+    padding: 0.5rem 3rem;
+    border-radius: 15px;
+    color: white;
+}
+
+.board{
+    height: 400px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    aspect-ratio: 1/1;
+}
+
+.box{
+    position:relative;
+    width:100%;
+    aspect-ratio: 1/1;
+    cursor: pointer;
+    font-size: 3rem;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4,
+        0 0 0px #03bcf4;
+}
+
+.box.win{
+    background-color: #111b1e;
+}
+
+.box1,.box2,.box4,.box5{
+    border-right: 2px solid #03bcf4;
+    border-bottom: 2px solid #03bcf4;
+}
+
+.box3,.box6{
+    border-bottom: 2px solid #03bcf4;
+}
+
+.box7,.box8{
+    border-right: 2px solid #03bcf4;
+}
+
+.btn{
+    position: absolute;
+    bottom: 2rem;
+    padding: 0.5rem 2rem;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 3px 4px 15px #1b829e;
+    transition: 0.5s;
+    opacity: 0;
+}
+
+.btn.active{
+    opacity: 1;
+}
+
+.btn:hover{
+    transform: scale(1.1);
+}
