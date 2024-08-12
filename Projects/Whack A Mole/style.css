@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    overflow: hidden;
+}
+
+.wrapper{
+    height: 100vh;
+    width: 100vw;
+    background: url('./mario-bg.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 2rem;
+}
+
+.board{
+    width: 540px;
+    height: 540px;
+    
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    background: url('./soil.png');
+    background-size: cover;
+    border: 3px solid white;
+    border-radius: 25px;
+}
+
+.board div{
+    width: 180px;
+    height: 180px;
+    background: url('./pipe.png');
+    background-size: cover;
+}
+
+.board div img{
+    height: 100px;
+    width: 100px;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.begin{
+    position: absolute;
+    top: 30%;
+    left: 0%;
+    height: 300px;
+    width: 500px;
+    /* background-color: aqua; */
+    background: url('newGame.png');
+    background-size: cover;
+    border: 2px solid white;
+    box-shadow: 5px 5px 15px black;
+}
+
+button{
+    padding: 0.5rem 1rem;
+    background: black;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 5px 5px 15px;
+    cursor: pointer;
+}
+
+.btn{
+    opacity:0;
+}
+
+.start{
+    margin-right: 18rem;
+    margin-top: 20%;
+}
+
+.new{
+    margin-right: 18rem;
+    margin-top: 2rem;
+}
